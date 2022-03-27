@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-LP.svg">
+    <script src="JS/login.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+</head>
+<body onload="load()">
+    <div class="options-container">
+        <img src="/Images/LP Logo.svg" alt="logo">
+        <h1>Color Picker</h1>
+        <button id="login" class="login" onclick="displayLogin()">Sign In</button>
+        <button id="create" class="create" onclick="displayCreate()">Create Account</button>
+    </div>
+
+
+    <div class="login-container" id="login-container">
+        <h1>LOGIN</h1>
+        <img src="/Images/logo.svg" alt="logo">
+        <input type="text" placeholder="Username" id="username" name="username">
+        <input type="password" placeholder="Password" id="password" name="password">
+        <p id="incorrect" class="incorrect">Incorrect username or password</p>
+        <button id="signInBTN" class="signInBTN" type="submit" onclick="signIn()">Sign In</button>
+        <button id="create" class="create" type="submit" onclick="displayCreate()">Create Account</button>
+        <button id="backBTN" class="backBTN" type="submit" onclick="options()">Go Back</button>
+
+    </div>
+
+    <div class="create-container" id="create-container">
+        <h1>Create Account</h1>
+        <img src="/Images/logo.svg" alt="logo">
+        <input type="text" placeholder="Username" id="username-create" class="username-create" name="username">
+        <input type="password" placeholder="Password" id="password-create" class="password-create" name="password">
+        <button id="creatBTN" class="createBTN" type="submit" onclick="create()">Create</button>
+        <button id="login" class="login" type="submit" onclick="displayLogin()">Sign In</button>
+        <button id="backBTN" class="backBTN" type="submit" onclick="options()">Go Back</button>
+
+    </div>
+
+</body>
+</html>

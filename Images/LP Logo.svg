@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="422" height="606" viewBox="0 0 422 606">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="42" y="-232" width="422" height="606" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="LP_Logo" data-name="LP Logo" transform="translate(-42 232)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <text id="L" transform="translate(6 202)" font-size="500" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="0" y="0">L</tspan></text>
+    <text id="P" transform="translate(56 328)" font-size="500" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="0" y="0">P</tspan></text>
+    <path id="Path_10" data-name="Path 10" d="M3820.329,1574.047l16.884-65.035-13.762,15.308-9.108,46.244s2.888,15.563,3.369,15.563,29.361-20.216,29.361-20.216l10.75-67.385-24.869,13.317Z" transform="translate(-3658 -1529)" fill="#f6f6f6" stroke="#f6f6f6" stroke-width="1"/>
+  </g>
+</svg>

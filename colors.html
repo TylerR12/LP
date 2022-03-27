@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Color Picker</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-LP.svg">
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+</head>
+<body onload="currentColor()">
+    <script src="js/colorPicker.js"></script>
+    <h1>Color Picker</h1>
+    <div class="logo-container">
+        <link rel="icon" type="image/x-icon" href="/images/favicon-LP.svg">
+    </div>
+    <br>
+    <div class="buttons">
+    <h2>Preset Colors</h2>
+    <div class="buttons-container">
+
+        <div class="top">
+            <button class="greenBTN" id="greenBTN" onclick="green()">green</button>
+            <button class="redBTN" id="redBTN" onclick="red()">red</button>
+            <button class="blueBTN" id="blueBTN" onclick="blue()">blue</button>
+            <button class="purpleBTN" id="purpleBTN" onclick="purple()">purple</button>
+        </div>
+        <div class="bottom">
+            <button class="yellowBTN" id="yellowBTN" onclick="yellow()">yellow</button>
+            <button class="cyanBTN" id="cyanBTN" onclick="cyan()">cyan</button>
+            <button class="whiteBTN" id="whiteBTN" onclick="white()">white</button>
+            <button class="offBTN" id="offBTN" onclick="off()">Off</button>
+        </div>
+    </div>
+    <br>
+    <!-- <div class="output-container">
+        <input type="text" id="currentText" value="Current Color:" disabled>
+        <br>
+        <input type="text" id="current" value="" disabled>
+        <h2>Current Colors</h2>
+        <button class="currentColor" id="curColor" disabled></button>
+    </div> -->
+    <br>
+    <h2>Custom Colors</h2>
+    <h2 class="labels" id="redLabel">Red</h2>
+    <input type="range" min="0" max="100" value="50" class="slider" id="sliderRed">
+    <br>
+    <br>
+    <h2 class="labels" id="blueLabel">Blue</h2>
+    <input type="range" min="0" max="100" value="50" class="slider" id="sliderBlue">
+    <br>
+    <br>
+    <h2 class="labels" id="greenLabel">Green</h2>
+    <input type="range" min="0" max="100" value="50" class="slider" id="sliderGreen">
+    </div>
+    <br><br>
+    <br>
+    <div class="colorText">
+        <button class="upload" onclick="upload()">Change</button>
+        <div class="changed" id="changed">
+            <p class="success">Changed</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+body{
+    background: #f0efef;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1{
+   font-weight: 400; 
+}
+
+h2{
+    font-weight: 100;
+}
+
+input[type="text"]{
+    font-size: 20px;
+    height: 55px;
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;   
+}
+
+input[type="password"]{
+    font-size: 20px;
+    height: 55px;
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;   
+}
+
+/*not displayed until code is complete*/
+.create{
+    /* display: none; */
+}
+
+/*Option Buttons*/
+.options-container{
+    margin-top: -28px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+button{
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid #707070;
+}
+
+button:hover{
+    background-color: #f0efef;
+}
+
+.options-container button{
+    height: 45px;
+    width: 175px;
+    border-radius: 25px;
+}
+
+.options-container img{
+    height: 225px;
+}
+
+/*Login*/
+.login-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0efef;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    display: none;
+}
+
+.login-container button{
+    height: 45px;
+    width: 175px;
+    border-radius: 25px;
+}
+
+.login-container img{
+    height: 150px;
+}
+
+.incorrect{
+    color: red;
+    display: none;
+}
+
+/*Create Account*/
+.create-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0efef;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    display: none;
+}
+
+.create-container button{
+    height: 45px;
+    width: 175px;
+    border-radius: 25px;
+}
+
+.create-container img{
+    height: 150px;
+}
+
+
+

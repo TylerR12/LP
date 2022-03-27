@@ -1,0 +1,258 @@
+
+body{
+    background: #f0efef;
+    /* background-position: 0% 7%; */
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-weight: 400;
+}
+
+.logo{
+    height: 100px;
+}
+
+button{
+    height: 55px;
+    width: 55px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: black;
+    border: 1px solid #707070;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* on click */
+.greenBTN:active{
+    background: green;
+    opacity: 0.7;
+}
+.redBTN:active{
+    background: red;
+    opacity: 0.7;
+}
+.blueBTN:active{
+    background: blue;
+    opacity: 0.7;
+}
+.purpleBTN:active{
+    background: magenta;
+    opacity: 0.7;
+}
+.cyanBTN:active{
+    background: cyan;
+    opacity: 0.7;
+}
+.yellowBTN:active{
+    background: yellow;
+    opacity: 0.7;
+}
+.whiteBTN:active{
+    background: white;
+    opacity: 0.7;
+}
+.offBTN:active{
+    opacity: 0.7;
+}
+
+
+/* button background colors */
+.greenBTN{
+    background: green;
+    /* border-color: green; */
+    color: green;
+}
+.redBTN{
+    background: red;
+    /* border-color: red; */
+    color: red;
+}
+.blueBTN{
+    background: blue;
+    /* border-color: blue; */
+    color: blue;
+}
+.purpleBTN{
+    background: magenta;
+    /* border-color: magenta; */
+    color: magenta;
+}
+.cyanBTN{
+    background: cyan;
+    /* border-color: cyan; */
+    color: cyan;
+}
+.yellowBTN{
+    background: yellow;
+    /* border-color: yellow; */
+    color: yellow;
+    /* color: black; */
+}
+.whiteBTN{
+    background: white;
+    /* border-color: white; */
+    color: white;
+    /* color: black; */
+}
+
+.offBTN{
+    color: black;
+
+}
+
+input[type="text"]{
+    background: transparent;
+    color: black;
+    opacity: 1;
+}
+
+.buttons{
+    max-width: 500px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.output-container{
+    text-align: center;
+}
+
+.buttons h1,h2{
+    text-align: center;
+}
+
+#current{
+    text-align: center;
+    border: black;
+    /* border-style: solid; */
+}
+
+#currentText{
+    text-align: center;
+    border: black;
+    /* border-style: solid; */
+}
+
+.labels{
+    text-align: left;
+}
+
+h2{
+    font-weight: 350;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1px;
+    background-color: var(--slider);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    background: #707070;
+    border: 0.2px solid #707070;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -13px;
+    -webkit-appearance: none;
+    border: 2px solid #707070;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+  
+  /* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+    border: 2px solid #707070;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+  
+  /* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+    border: 2px solid #707070;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+.colorText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upload{
+    color: black;
+    background-color: white;
+    height: 55px;
+    width: 120px;
+}
+
+.upload:hover{
+    background-color: #f0efef;
+    transform: scale(1);
+}
+
+.changed{
+    display: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    animation: success 2s forwards;
+}
+
+.success{
+    font-size: 18px;
+}
+
+@keyframes success {
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+
+@media screen and (max-width: 720px) {
+    .buttons-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+  }
